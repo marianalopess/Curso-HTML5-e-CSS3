@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.jpg" type="image/jpg">
+        <img src="imagens/imagem-g.jpg" alt="Imagem flexivel"> 
+        <!--Primeiro a gente carrega a imagem, e acima dela a gente adiciona os sources. Sempre os menores formatos em cima e os maiores abaixo.-->
+        <h1>Reproduzindo áudio</h1>
+        <p>Vamos reproduzir áudio em HTML5.</p>
+        <!--<audio src="midia/Staycation - Corbyn Kites.mp3" controls autoplay></audio>
+        MP3 WAV OGG - formatos de áudio-->
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/staycation.mp3" type="audio/mpeg">
+            <source src="midia/staycation.mp3" type="audio/ogg">
+            <source src="midia/staycation.mp3" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        </audio> 
+        <h1>Inserindo vídeo</h1>
+        <p>É importante colocar o arquivo em <mark>várias versões</mark> porque cada navegador abre uma extensão diferente. Se não, <strong>o vídeo pode abrir em um computador e não abrir em outro</strong>.</p>
+    </picture>
+</body>
+</html>
